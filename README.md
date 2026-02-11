@@ -8,7 +8,7 @@ Live: [https://tkani.github.io/portfolio/](https://tkani.github.io/portfolio/)
 
 ## About
 
-Personal portfolio website for **Thamaraikani Chandrasooden (Kani)** — a Global Talent Visa holder based in the United Kingdom with 5+ years of experience in full-stack web development, data science, and AI/ML engineering.
+Personal portfolio website for **Thamaraikani Chandrasooden (Kani)** — a Global Talent Visa holder based in the United Kingdom with 6+ years of experience in full-stack web development, data science, and AI/ML engineering.
 
 ## Sections
 

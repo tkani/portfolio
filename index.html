@@ -1174,24 +1174,70 @@
         }
 
         /* ===== RESPONSIVE ===== */
+        /* Tablet */
+        @media (max-width: 1024px) {
+            .container {
+                padding: 0 32px;
+            }
+            .hero-content {
+                grid-template-columns: 1fr 260px;
+                gap: 40px;
+            }
+            .projects-grid, .edu-grid, .pub-grid {
+                grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            }
+        }
+
+        /* Mobile */
         @media (max-width: 768px) {
             .container {
-                padding: 0 20px;
+                padding: 0 18px;
+            }
+            .hero {
+                padding: 120px 0 60px;
             }
             .hero-content {
                 grid-template-columns: 1fr;
-                gap: 40px;
+                gap: 32px;
             }
             .hero-image {
                 order: -1;
-                max-width: 280px;
+                max-width: 220px;
                 margin: 0 auto;
             }
+            .hero-image img {
+                height: 260px;
+            }
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
+            }
+            .hero .subtitle {
+                font-size: 1rem;
+            }
+            .hero .bio {
+                font-size: 0.95rem;
+            }
+            .hero-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .hero-links a {
+                justify-content: center;
             }
             .nav-links {
                 display: none;
+            }
+            .section {
+                padding: 60px 0;
+            }
+            .section-header {
+                margin-bottom: 32px;
+            }
+            .section-header h2 {
+                font-size: 1.4rem;
+            }
+            .skills-grid {
+                grid-template-columns: 1fr;
             }
             .projects-grid, .edu-grid, .pub-grid {
                 grid-template-columns: 1fr;
@@ -1199,38 +1245,70 @@
             .project-card .pc-header,
             .edu-card .ec-header,
             .pub-card .pub-header {
-                padding: 20px 20px 0;
+                padding: 20px 18px 0;
             }
             .project-card .pc-body,
             .edu-card .ec-body,
             .pub-card .pub-body {
-                padding: 14px 20px 20px;
+                padding: 14px 18px 20px;
             }
             .project-card .pc-footer {
-                padding: 0 20px 20px;
+                padding: 0 18px 20px;
+                flex-wrap: wrap;
             }
             .timeline {
-                padding-left: 24px;
+                padding-left: 20px;
+            }
+            .timeline::before {
+                left: 10px;
             }
             .timeline-item {
-                padding: 20px;
-                margin-left: 10px;
+                padding: 18px;
+                margin-left: 8px;
+            }
+            .timeline-item::before {
+                left: -22px;
+                width: 12px;
+                height: 12px;
+            }
+            .timeline-item::after {
+                left: -8px;
+                width: 8px;
             }
             .timeline-header {
                 flex-direction: column;
                 gap: 8px;
             }
-            .skills-grid {
-                grid-template-columns: 1fr;
+            .timeline-title {
+                font-size: 1rem;
             }
             .featured-project {
-                padding: 24px;
+                padding: 24px 18px;
             }
             .featured-highlights {
                 grid-template-columns: 1fr;
             }
             .featured-badges {
                 flex-direction: column;
+            }
+            .featured-project h3 {
+                font-size: 1.2rem;
+            }
+            .edu-links, .cert-links {
+                flex-direction: column;
+                gap: 8px;
+            }
+            .achievement-item {
+                padding: 12px;
+            }
+            .social-row {
+                justify-content: center;
+            }
+            #particlesCanvas {
+                display: none;
+            }
+            .cursor-glow {
+                display: none;
             }
         }
 
@@ -1319,7 +1397,7 @@
                     <h1>Thamaraikani Chandrasooden</h1>
                     <p class="subtitle">Senior Software Engineer &bull; Full-Stack Developer &bull; Data Analyst</p>
                     <p class="bio">
-                        Experienced Full-Stack Software Developer and Data Analyst with over five years of expertise in web application development. Proficient in Python, with extensive experience in frameworks such as Flask and Django, as well as REST API development, data mining, and machine learning.
+                        Experienced Full-Stack Software Developer and Data Analyst with over six years of expertise in web application development. Proficient in Python, with extensive experience in frameworks such as Flask and Django, as well as REST API development, data mining, and machine learning.
                     </p>
                     <div class="hero-links">
                         <a href="contact.html" class="btn-primary">Get In Touch</a>
